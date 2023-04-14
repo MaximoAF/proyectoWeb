@@ -1,32 +1,68 @@
-html,body{
+html,
+body {
   height: 100%;
   width: 100%;
-  min-width: 1000px;
+  min-width: 980px;
   margin: 0px !important;
   padding: 0px !important;
 }
 
-.cont_row{
+.cont_row {
   display: flex;
   flex-direction: row;
-
-
 }
-.cont_col{
+.cont_col {
   display: flex;
   flex-direction: column;
-
-  
 }
 
-
+#contenedor{
+  width: 100%;
+}
 #nav{
-  align-items: center;
-  margin: 10px 10px 10px 10px;
-  height: 100px;
-  width: 100% !important;
+  background-image: linear-gradient(to top, white 0%, moccasin 50%);
+
+  width: 100%;
 }
-#logo{
-  height: 100%;
+#nav div.cont_row{
+  position: relative;
+
+  margin: 10px 10px 10px 10px;
+
+  align-items: center;
   
+  height: 100px;
+}
+
+#nav div.cont_row #logo {
+  margin-left: 10px;
+  padding-right: 25px;
+
+  border-right: 3px solid #ff7eee;
+
+  height: 100%;
+}
+#nav div.cont_row #logo-name {
+  margin: 0px 20px 0px 30px;
+
+
+
+  color: #ff7eee;
+  font-size: 70px;
+  font-family: "Lilita One", cursive;
+}
+#nav div.cont_row .icon {
+  position: absolute;
+  right: 10px;
+
+  font-size: 70px;
+  color: #494949;
+}
+#nav div.cont_row #a.icon{
+  right: 80px;
+}
+#nav hr{
+  border: 2px solid #ff7eee;
+  border-radius: 25px;
+  width: 96%;
 }

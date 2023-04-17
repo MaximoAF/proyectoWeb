@@ -5,6 +5,9 @@ body {
   min-width: 980px;
   margin: 0px !important;
   padding: 0px !important;
+  display: grid;
+  place-items: center;
+
 }
 
 .cont_row {
@@ -20,14 +23,18 @@ body {
   width: 100%;
 }
 #nav {
-  background-image: linear-gradient(to top, white 0%, moccasin 50%);
+  
 
   width: 100%;
+} 
+#header_nav{
+padding: 10px;
+  background-image: linear-gradient(to top, white 0%, moccasin 50%);
 }
-#nav div.cont_row {
+#nav div#header_nav.cont_row {
   position: relative;
 
-  margin: 10px 10px 10px 10px;
+
 
   align-items: center;
 
@@ -59,17 +66,25 @@ body {
 #nav div.cont_row #a.icon {
   right: 80px;
 }
-#nav hr {
-  border: 2px solid #ff7eee;
-  border-radius: 25px;
-  width: 96%;
+/*----(portada (nav_var y banner))-----------------------------------------------------------*/
+#portada{
+  background-image: linear-gradient(to bottom, #333333 20%,#333333 60%, white 60%,white 100%);
+
+
+}
+
+
+
+/*----(nav_var)-----------------------------------------------------------*/
+#nav_var{
+  width: 100%;
 }
 
 #nav_var ul,ol{
   list-style: none;
-  background-color: #ff7eee;
+  background-color: #333333;
   margin: 0px;
-  padding: 0px;
+  padding: 10px;
   
   
 
@@ -83,8 +98,9 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #nav_ul li a:hover {
-  background-color: #ecaae4;
+  background-color: #474747;
   cursor: pointer;
+  border-radius: 20px;
 }
 #nav_ul {
   width: 100%;
@@ -101,9 +117,16 @@ body {
 #nav_ul li:hover > ul{
   display: block;
 }
+/*--------(banner)--------------------------------------------------------*/
+#banner{
+  margin-top: 40px;
 
-#vacio{
-  height: 250px;
+
+  justify-content: center;
+}
+.banner{
+  width: 90%;
+  border-radius: 50px;
 }
 
 /*-----(colecciones)-------------------------------------------------------------*/
@@ -139,4 +162,64 @@ body {
   color: #ff7eee;
   text-decoration: none;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title_section{
+  width: 100%;
+  text-align: center;
+  color: #333333;
+  font-size: 50px;
+  font-family: "Lilita One", cursive;
+}
+/*  -----------------recomendados-------------------------  */
+.recomendado{
+  width: 90%;
+  padding: 25px;
+  align-items: center;
+}
+.recomendado img{
+  width: 100%;
+  
+
+}
+.recomendado .description,.img{
+  width: 100% ;
+  margin: 25px;
+  text-align: center;
+  
+}
+.recomendado .description h3{
+  width: 100%;
+  text-align: center;
+  color: #333333;
+  font-size: 50px;
+  font-family: "Lilita One", cursive;
+  margin: 15px;
+}
+.recomendado .description h4{
+  width: 100%;
+  text-align: center;
+  color: #333333;
+  font-size: 55px;
+  font-family: "Lilita One", cursive;
+  margin: 15px;
+}
+.recomendado .description p{
+  font-size: 24px;
+  font-family:Roboto,sans-serif;
+  color: #333333;
+}
+.recomendado .description button{
+  height: 55px;
+  width: 160px;
+  border: none;
+  border-radius: 30px;
+  background-color:#ff7eee ;
+  font-family:Roboto,sans-serif;;
+  color: #ffffff;
+  font-size: 24px;
+  margin: 10px;
+}
+.recomendado .description button:hover{
+  background-color: #ffffff;
 }
